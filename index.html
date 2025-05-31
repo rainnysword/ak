@@ -1,0 +1,87 @@
+<html>
+    <style>
+        body {
+            font-family: Helvetica;
+            background-color: #1e1e1ec6;
+            color: #b6b6b6;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://cdn.discordapp.com/attachments/1316649625146359851/1378447728673161226/202505112215.gif?ex=683ca2fc&is=683b517c&hm=d980f7fc40bd9483f819139014f9d9a677b666646717df0d88288ef4557c6388&');
+            background-size: cover;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        p {
+            font-size: 16px;
+        }
+        #pfp {
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+        }
+        .main {
+            max-width: 800px;
+            width: 515px;
+            text-align: center;
+            margin: 10% auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.579);
+        }
+        .main2 {
+            max-width: 800px;
+            text-align: center;
+            margin: 10% auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.579);
+        }
+        .cover {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.949);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        .cover h2 {
+            color: #ffffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <head></head>
+    <body>
+        <div class="cover" id="cover">
+            <h2>Click to view</h2>
+        
+        </div>
+        <div class="main">
+            <img id="pfp" src="https://media.discordapp.net/attachments/1352985463857877012/1377446153574027325/20231111_205414.jpg?ex=683c49f2&is=683af872&hm=dafc0cc4227cf3c54eba38fe57462ce083ddcd39d8b7586282d2f786c0b73940&=&format=webp&width=626&height=833" alt="Logo" style="width: 130px; height: 130px;">
+            <br>
+            <h1>АК</h1>
+            <p>здрасвуйте я ак</p>
+            <hr>
+            <br><br>
+            <a href="https://discord.gg/MmhMSE5xSX" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 18px;">Bureau 56　－　DISCORD</a>
+            <br>
+            <br>
+            <a href="roblox://PlaceId=131450284887156" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 18px;">おくら　－　ROBLOX</a>
+            <br>
+        </div>
+        <footer id="footer1">Made by AK</footer>
+    </body>
+    <audio id="background-audio" loop>
+        <source src="soundeffectone.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+
+        document.getElementById("cover").addEventListener("click", function() {
+            this.style.display = "none";
+            let audio = document.getElementById("background-audio");
+            audio.play();
+        });
+    </script>
+</html>
